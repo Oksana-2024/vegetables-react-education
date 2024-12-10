@@ -1,0 +1,34 @@
+.listHeader {
+  display: none;
+}
+
+.linkMenu {
+}
+
+@media screen and (min-width: 768px) {
+  .listHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .linkMenu {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .listHeader {
+    gap: 20px;
+  }
+}
+
+.listMenu {
+}
+
+.listFooter {
+}

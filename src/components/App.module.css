@@ -1,0 +1,36 @@
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.heroPage{
+padding-top: 48px;
+padding-bottom: 20px;
+background-color: var(--main-background);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 32px;
+  }
+}
+.headerPage {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: var(--gray);
+}
+.footerPage {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--secondary-background);
+}

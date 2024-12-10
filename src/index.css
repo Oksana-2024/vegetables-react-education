@@ -1,0 +1,48 @@
+:root {
+  --main-text-color: #141414;
+  --main-background: #a1c487;
+  --secondary-background: #eaf7e5;
+  --orange: #fc8a11;
+  --beige: #faf3e7;
+  --gray: #f3f3f3;
+  --main-font: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: var(--main-text-color);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  outline: none;
+}
