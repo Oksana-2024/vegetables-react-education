@@ -7,12 +7,12 @@ import css from "./Header.module.css";
 
 const Header = () => {
   return (
-    <>
-      <Navigation header={true}/>
+    <div className={css.containerHeader}>
+      <Navigation header={true} navHeader={true} nav={true}/>
       <Logo fill={true} />
-      <HiOutlineShoppingCart className={css.iconShop} size="24" />
-      <CgMenuLeft />
-    </>
+      <HiOutlineShoppingCart className={css.iconShop} size="20" />
+      <CgMenuLeft className={css.iconMenu} />
+    </div>
   );
 };
 
