@@ -1,27 +1,60 @@
 import clsx from "clsx";
 import css from "./Navigation.module.css";
 
-const Navigation = ({ header, menu }) => {
+const Navigation = ({
+  header,
+  menu,
+  footer,
+  navMenu,
+  navHeader,
+  navfooter,
+  nav,
+}) => {
   return (
-    <nav>
+    <nav className={clsx(menu ? css.navMenu : null, nav ? css.navStyles : null)}>
       <ul
         className={clsx(
           menu ? css.listMenu : null,
-          header ? css.listHeader : css.listFooter
+          header ? css.listHeader : null,
+          footer ? css.listFooter : null
         )}
       >
         <li>
-          <a className={css.linkMenu} href="#">
+          <a
+            className={clsx(
+              navMenu ? css.linkMenu : null,
+              navHeader ? css.linkHeader : null,
+              navfooter ? css.linkFooter : null,
+              css.link
+            )}
+            href="#"
+          >
             How It Works
           </a>
         </li>
         <li>
-          <a className={css.linkMenu} href="#">
+          <a
+            className={clsx(
+              navMenu ? css.linkMenu : null,
+              navHeader ? css.linkHeader : null,
+              navfooter ? css.linkFooter : null,
+              css.link
+            )}
+            href="#"
+          >
             Vegetables
           </a>
         </li>
         <li>
-          <a className={css.linkMenu} href="#">
+          <a
+            className={clsx(
+              navMenu ? css.linkMenu : null,
+              navHeader ? css.linkHeader : null,
+              navfooter ? css.linkFooter : null,
+              css.link
+            )}
+            href="#contacts"
+          >
             Contacts
           </a>
         </li>
