@@ -6,13 +6,13 @@ const Logo = ({ fill }) => {
   return (
     <>
       <div>
-        <p className={css.logo}>
+        <a href="./" className={css.logo}>
           <BsGrid3X3GapFill
             className={clsx(fill ? css.iconHeader : null)}
             size="16"
           />
           veggieboost
-        </p>
+        </a>
       </div>
     </>
   );
