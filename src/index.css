@@ -6,6 +6,8 @@
   --beige: #faf3e7;
   --gray: #f3f3f3;
   --main-font: "DM Sans", sans-serif;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --white: #fff;
 }
 
 h1,
