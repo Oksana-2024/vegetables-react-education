@@ -1,0 +1,14 @@
+.socList {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+  .socLink {
+    border: 1px solid var(--main-text-color);
+    border-radius: 10px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
