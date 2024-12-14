@@ -8,6 +8,64 @@
   --main-font: "DM Sans", sans-serif;
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
   --white: #fff;
+  --main-font-family: "DM Sans", sans-serif;
+  --second-font-family: "Neue Montreal", sans-serif;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../src/assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../src/assets/fonts/DMSans-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../src/assets/fonts/DMSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../src/assets/fonts/DMSans-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../src/assets/fonts/DMSans-MediumItalic.ttf") format("truetype");
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../src/assets/fonts/NeueMontreal-Medium.otf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../src/assets/fonts/NeueMontreal-Italic.otf") format("truetype");
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
 }
 
 h1,
@@ -19,6 +77,7 @@ h6,
 p {
   margin: 0;
   color: var(--main-text-color);
+  font-family: var(--main-font-family);
 }
 
 ul,
@@ -31,11 +90,13 @@ ol {
 a {
   text-decoration: none;
   color: var(--main-text-color);
+  font-family: var(--main-font-family);
 }
 
 button {
   cursor: pointer;
   border: none;
+  font-family: var(--main-font-family);
 }
 
 img {
@@ -47,4 +108,5 @@ img {
 input,
 textarea {
   outline: none;
+  font-family: var(--main-font-family);
 }
