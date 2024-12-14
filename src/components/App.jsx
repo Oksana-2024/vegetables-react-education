@@ -7,9 +7,7 @@ import clsx from "clsx";
 import Vegetables from "./Vegetables/Vegetables";
 import { useState } from "react";
 import EasySteps from "./EasySteps/EasySteps";
-//import style from "../index.css"
-//import textDiscount from "../textDiscount.json"
-//import Discount from "./Discount/Discount";
+import Discount from "./Discount/Discount";
 
 const App = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -18,7 +16,7 @@ const App = () => {
     <>
       <section className={css.headerPage}>
         <div className={css.container}>
-          <Header handleClick={mobileMenuToggle}/>
+          <Header handleClick={mobileMenuToggle} />
         </div>
       </section>
       <main>
@@ -32,10 +30,13 @@ const App = () => {
             <Vegetables />
           </div>
         </section>
-        <section className={css.easyPage}>
+        <section>
           <div className={css.container}>
-            <EasySteps/>
+            <EasySteps />
           </div>
+        </section>
+        <section className={css.discountPage}>
+          <Discount />
         </section>
       </main>
       <section className={css.footerPage}>
