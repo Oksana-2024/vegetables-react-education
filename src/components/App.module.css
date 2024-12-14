@@ -26,7 +26,7 @@
 }
 
 .heroPage{
-  padding-top: 48px;
+  padding-top: 18px;
   padding-bottom: 20px;
   background-color: var(--main-background);
   }
@@ -36,7 +36,12 @@
     padding-bottom: 100px;
   }
 
-.footerPage {
+  .easyPage{
+   
+
+  }
+
+  .footerPage {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--secondary-background);

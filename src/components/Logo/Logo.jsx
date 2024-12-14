@@ -5,7 +5,7 @@ import clsx from "clsx";
 const Logo = ({ fill }) => {
   return (
     <>
-      <div>
+      <div className={css.logoContainer}>
         <a href="./" className={css.logo}>
           <BsGrid3X3GapFill
             className={clsx(fill ? css.iconHeader : null)}

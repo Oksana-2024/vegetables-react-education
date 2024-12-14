@@ -11,17 +11,27 @@
 
 .iconMenu {
   stroke-width: 1;
-  
   stroke: var(--main-background);
   width: 20px;
   height: 16px;
+}
+
+.buttonMenu {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 @media screen and (min-width: 768px) {
     .iconShop {
         display: block;
     }
-    .iconMenu{
+    .buttonMenu{
         display: none;
     }
 }

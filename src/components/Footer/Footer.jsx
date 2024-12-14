@@ -2,11 +2,13 @@ import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import Social from "../Social/Social";
 import css from "./Footer.module.css";
+import img from "../../assets/images/vegetables_footer.png"
 //import css from "./Footer.module.css";
 
 const Footer = () => {
   return (
     <>
+    <img className={css.img} src={img} alt="Broccoli" width={335} height={172} />
       <Logo />
       <Navigation navFooter={true} footer={true} />
      <Social/>

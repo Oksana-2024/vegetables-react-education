@@ -16,3 +16,8 @@
   justify-content: center;
 }
 
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

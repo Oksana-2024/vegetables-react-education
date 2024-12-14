@@ -5,13 +5,15 @@ import { CgMenuLeft } from "react-icons/cg";
 import css from "./Header.module.css";
 //import clsx from "clsx";
 
-const Header = () => {
+const Header = ({handleClick}) => {
   return (
     <div className={css.containerHeader}>
-      <Navigation header={true} navHeader={true} nav={true}/>
+      <Navigation header={true} navHeader={true} nav={true} />
       <Logo fill={true} />
       <HiOutlineShoppingCart className={css.iconShop} size="20" />
-      <CgMenuLeft className={css.iconMenu} />
+      <button className={css.buttonMenu} type="button" onClick={handleClick}>
+        <CgMenuLeft className={css.iconMenu} />
+      </button>
     </div>
   );
 };
