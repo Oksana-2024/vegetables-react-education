@@ -1,0 +1,42 @@
+.easyTitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.easyBox {
+  border-radius: 40px;
+  padding: 40px 20px 0;
+  background-image: url(../../assets/images/img_background.png);
+}
+
+.easyList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.numberSpan {
+  width: 40px;
+  height: 38px;
+  border-radius: 200px;
+  padding: 10px 14px;
+  background-color: var(--main-background);
+}
+
+.easyImg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
