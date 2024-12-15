@@ -9,9 +9,10 @@ const Navigation = ({
   navHeader,
   navfooter,
   nav,
+  marginFooter,
 }) => {
   return (
-    <nav className={clsx(menu ? css.navMenu : null, nav ? css.navStyles : null)}>
+    <nav className={clsx(menu ? css.navMenu : null, nav ? css.navStyles : null, marginFooter ? css.marginFooter: null)}>
       <ul
         className={clsx(
           menu ? css.listMenu : null,
@@ -27,7 +28,7 @@ const Navigation = ({
               navfooter ? css.linkFooter : null,
               css.link
             )}
-            href="#"
+            href="#work"
           >
             How It Works
           </a>
@@ -40,7 +41,7 @@ const Navigation = ({
               navfooter ? css.linkFooter : null,
               css.link
             )}
-            href="#"
+            href="#organic"
           >
             Vegetables
           </a>

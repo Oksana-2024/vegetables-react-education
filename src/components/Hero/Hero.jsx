@@ -28,7 +28,7 @@ const Hero = () => {
       />
       <div className={css.buttonBox}>
         <button className={css.buttonFirst} type="button">
-          #organic
+         <a href="#organic"> #organic</a>
         </button>
         <button className={css.buttonSecond} type="button">
           #products
@@ -37,7 +37,7 @@ const Hero = () => {
           #basket
         </button>
         <button className={css.buttonFourth} type="button">
-          #vegetables
+          <a href="#">#vegetables</a>
         </button>
       </div>
     </>

@@ -21,3 +21,7 @@
   flex-direction: row;
   align-items: center;
 }
+
+.footerLogo {
+  margin-bottom: 40px;
+}

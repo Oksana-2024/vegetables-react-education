@@ -5,12 +5,12 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import css from "./MobileMenu.module.css";
 import clsx from "clsx";
 
-const MobileMenu = ({ open, handleClick }) => {
+const MobileMenu = ({ open, onMenu }) => {
   return (
     <div className={clsx(css.mobileMenu, open ? css.isOpen : null)}>
       <div className={css.menuContainer}>
         <Logo fill={true} />
-        <button onClick={handleClick}>
+        <button onClick={onMenu}>
           <IoMdClose className={css.iconClose} size="24px" />
         </button>
       </div>
