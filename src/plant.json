@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Carrot",
+    "id": 1,
+    "img": "./images/carrot.png",
+    "alt": "Carrot",
+    "price": 100
+  },
+  {
+    "name": "Brussel sprouts",
+    "id": 2,
+    "img": "./images/brussel.png",
+    "alt": "Brussel sprouts",
+    "price": 80
+  },
+  {
+    "name": "Tomato",
+    "id": 3,
+    "img": "./images/tomato.png",
+    "alt": "Tomato",
+    "price": 40
+  },
+  {
+    "name": "Eggplant",
+    "id": 4,
+    "img": "./images/eggplant.png",
+    "alt": "Eggplant",
+    "price": 60
+  },
+  {
+    "name": "Sweet potatoes",
+    "id": 5,
+    "img": "./images/potatoes.png",
+    "alt": "Sweet potatoes",
+    "price": 80
+  },
+  {
+    "name": "Leek",
+    "id": 6,
+    "img": "./images/leek.png",
+    "alt": "Leek",
+    "price": 50
+  },
+  {
+    "name": "Mushrooms",
+    "id": 7,
+    "img": "./images/mushrooms.png",
+    "alt": "Mushrooms",
+    "price": 40
+  },
+  {
+    "name": "Corn",
+    "id": 8,
+    "img": "./images/corn.png",
+    "alt": "Corn",
+    "price": 60
+  }
+]
