@@ -1,5 +1,100 @@
 .heroPage {
-    padding-top: 18px;
-    padding-bottom: 20px;
-    background-color: var(--main-background);
-  }
+  padding-top: 18px;
+  padding-bottom: 20px;
+  background-color: var(--main-background);
+}
+
+.titleHero {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.titlePart {
+  font-style: italic;
+  color: var(--secondary-background);
+}
+
+.textHero {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+
+.buttonRound {
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  border-color: var(--beige);
+  margin-bottom: 8px;
+}
+
+.buttonText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  text-wrap: wrap;
+  color: var(--orange);
+  transform: rotate(-18deg);
+  font-family: var(--main-font-family);
+}
+
+.buttonFirst {
+  width: 79px;
+  height: 28px;
+  background-color: var(--gray);
+}
+
+.buttonSecond,
+.buttonThird,
+.buttonFourth {
+  border: 1px solid var(--white);
+  background-color: transparent;
+}
+
+.buttonFirst,
+.buttonSecond,
+.buttonThird,
+.buttonFourth {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 1000px;
+}
+
+.titleHero,
+.textHero,
+.button {
+  color: var(--white);
+}
+
+.buttonBox {
+  padding-left: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 4px 4px;
+}
+
+.imgHero {
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgBlock {
+  margin-bottom: -35px;
+}
