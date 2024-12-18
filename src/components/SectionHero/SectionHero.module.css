@@ -1,5 +1,5 @@
 .heroPage {
-  padding-top: 18px;
+  padding-top: 106px;
   padding-bottom: 20px;
   background-color: var(--main-background);
 }
@@ -20,9 +20,10 @@
 
 .textHero {
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.04em;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .buttonRound {
@@ -47,8 +48,7 @@
 }
 
 .buttonFirst {
-  width: 79px;
-  height: 28px;
+  padding: 8px 14px;
   background-color: var(--gray);
 }
 
@@ -95,6 +95,199 @@
   margin-right: auto;
 }
 
-.imgBlock {
-  margin-bottom: -35px;
+.reviews {
+  border-radius: 100%;
+  background-color: var(--white);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  z-index: 4;
+  font-family: var(--main-font-family);
+}
+
+.spanReviews {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+  text-align: center;
+  font-family: var(--main-font-family);
+}
+
+.box {
+  position: relative;
+  top: -56px;
+}
+
+.img1 {
+  top: 0;
+  z-index: 1;
+}
+.img2 {
+  top: 0;
+  left: 30px;
+  z-index: 2;
+}
+.img3 {
+  z-index: 3;
+  top: 0;
+  left: 60px;
+}
+
+.userImg {
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .heroPage {
+    padding-top: 186px;
+    padding-bottom: 32px;
+  }
+
+  .imgBlock {
+    width: 158px;
+  }
+
+  .titleHero {
+    font-size: 54px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+  }
+
+  .buttonRound {
+    width: 114px;
+    height: 114px;
+    margin-bottom: 4px;
+  }
+
+  .buttonText {
+    font-size: 24px;
+  }
+
+  .textHero {
+    margin-bottom: 32px;
+    line-height: 1;
+  }
+
+  .imgHero {
+    width: 488px;
+    margin-bottom: 7px;
+  }
+  .buttonBox {
+    padding-left: 488px;
+    gap: 8px 4px;
+  }
+
+  .buttonFirst,
+  .buttonSecond,
+  .buttonThird,
+  .buttonFourth {
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .buttonFirst {
+    padding: 10px 20px;
+  }
+
+  .userImg,
+  .reviews {
+    width: 56px;
+    height: 56px;
+  }
+
+  .box {
+    top: -82px;
+  }
+
+  .img2 {
+    left: 38px;
+  }
+  .img3 {
+    left: 74px;
+  }
+
+  .reviews {
+    left: 112px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .spanReviews {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .heroPage {
+    padding-top: 220px;
+  }
+
+  .userImg,
+  .reviews {
+    width: 82px;
+    height: 82px;
+  }
+
+  .box {
+    top: -98px;
+  }
+
+  .userImg,
+  .reviews {
+    width: 72px;
+    height: 72px;
+  }
+
+  .img2 {
+    left: 52px;
+  }
+  .img3 {
+    left: 104px;
+  }
+
+  .reviews {
+    left: 154px;
+    font-size: 24px;
+    line-height: 1;
+  }
+  .spanReviews {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .imgHero {
+    margin: 0;
+    position: absolute;
+    top: -105px;
+  }
+
+  .buttonBox {
+    padding-left: 296px;
+  }
+
+  .firstBox{
+    max-width: 672px;
+  }
+
+  .imgBox {
+    width: 517px;
+    height:324px;
+    position: relative;
+  }
+
+  
+  
 }

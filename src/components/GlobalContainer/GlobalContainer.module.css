@@ -17,4 +17,10 @@
     max-width: 1280px;
     padding: 0 32px;
   }
+
+  .heroContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+  }
 }
