@@ -41,6 +41,7 @@
   }
 
   .text {
+    width: 300px;
     font-size: 18px;
     line-height: 1.33;
   }
@@ -91,5 +92,9 @@
 
   .secondBox {
     gap: 40px;
+  }
+
+  .text {
+    width: 340px;
   }
 }
