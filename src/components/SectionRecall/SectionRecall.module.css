@@ -1,53 +1,120 @@
 .recallPage {
-    padding-top: 80px;
-    padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.inputTel {
+  border: 1px solid var(--main-text-color);
+  opacity: 0.3;
+  border-radius: 100px;
+  width: 335px;
+  height: 48px;
+  background-color: transparent;
+  padding: 15px 24px;
+}
+
+.image {
+  border-radius: 40px;
+}
+
+.recallBtn {
+  border-radius: 100px;
+  padding: 15px 35px;
+  width: 105px;
+  height: 48px;
+  background-color: var(--orange);
+  color: var(--white);
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .recallPage {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
-  
+
   .title {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 1.1;
   }
-  
+
   .text {
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.04em;
-    text-align: center;
-    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.33;
   }
-  
-  .form {
-    margin-bottom: 40px;
-    position: relative;
-  }
-  
+
   .inputTel {
-    border: 1px solid var(--main-text-color);
-    opacity: 0.3;
-    border-radius: 100px;
-    width: 335px;
-    height: 48px;
-    background-color: transparent;
-    padding: 15px 24px;
+    width: 355px;
   }
-  
-  .image {
-    border-radius: 40px;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
   }
-  
+
   .recallBtn {
-    border-radius: 100px;
-    padding: 15px 35px;
-    width: 105px;
-    height: 48px;
-    background-color: var(--orange);
-    color: var(--white);
-    position: absolute;
-    right: 0;
+    right: 174px;
   }
-  
+
+  .image {
+    width: 704px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .image {
+    width: 525px;
+  }
+
+  .box {
+    width: 614px;
+    padding-top: 98px;
+  }
+
+  .title {
+    text-align: start;
+    font-size: 48px;
+    line-height: 1.04;
+    margin-bottom: 40px;
+  }
+
+  .text{
+    margin-bottom: 80px;
+    text-align: start;
+  }
+
+  .form{
+    align-items: start;
+  }
+
+  .recallBtn {
+    right: 258px;
+  }
+}

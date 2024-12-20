@@ -54,5 +54,13 @@
     "img": "./images/corn.png",
     "alt": "Corn",
     "price": 60
+  },
+  {
+    "name": "Redish",
+    "id": 8,
+    "img": "./images/radish.png",
+    "alt": "Redish",
+    "price": 60
   }
+
 ]

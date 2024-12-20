@@ -29,6 +29,10 @@
   background-color: var(--secondary-background);
 }
 
+.plantItem:last-child{
+  display: none;
+}
+
 .plantList {
   display: flex;
   flex-direction: column;
@@ -73,5 +77,37 @@
   .text {
     font-size: 18px;
     line-height: 1.33;
+  }
+
+  .plantList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .plantItem {
+    width: 342px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+  }
+
+  .text {
+  }
+
+  .plantItem {
+    width: 390px;
+  }
+
+  .plantList{
+    justify-content: center;
+    margin-bottom: 44px;
+  }
+
+  .plantItem:last-child{
+    display: block;
   }
 }
