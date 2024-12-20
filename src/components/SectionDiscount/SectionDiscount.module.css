@@ -32,12 +32,12 @@
 }
 
 .text {
+  font-family: var(--main-font-family);
   font-weight: 500;
   color: var(--discont-color);
-  font-size: 40px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: -0.02em;
-  margin-trim: 2px;
 }
 span {
   font-family: var(--second-font-family);
@@ -53,4 +53,32 @@ span {
   background-color: var(--main-background);
   transform: rotate(-4deg);
   margin-top: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .discountPage {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .text {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .discountPage {
+    padding-top: 124px;
+    padding-bottom: 147px;
+  }
+
+  .secondLine {
+    transform: rotate(-1deg);
+  }
+
+  .text {
+    font-size: 40px;
+    line-height: 1.2;
+  }
 }

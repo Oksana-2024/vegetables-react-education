@@ -7,15 +7,15 @@ const SectionDiscount = () => {
            <div className={css.firstLine}>
              <ul className={css.list}>
                <li className={css.text}>
-                 Discount up to <span>40%</span>! Taste the vitamins and keep your
+                 Discount up to <span>40%</span>! Taste <span>the vitamins</span> and keep your
                  health.
                </li>
                <li className={css.text}>
-                 Discount up to <span>40%</span>! Taste the vitamins and keep your
+                 Discount up to <span>40%</span>! Taste <span>the vitamins</span> and keep your
                  health.
                </li>
                <li className={css.text}>
-                 Discount up to <span>40%</span>! Taste the vitamins and keep your
+                 Discount up to <span>40%</span>! Taste <span>the vitamins</span> and keep your
                  health.
                </li>
              </ul>
@@ -23,15 +23,15 @@ const SectionDiscount = () => {
            <div className={css.secondLine}>
              <ul className={css.list}>
                <li className={css.text}>
-                 Discount up to <span>40%</span>! Taste the vitamins and keep your
+                 Discount up to <span>40%</span>! Taste <span>the vitamins</span> and keep your
                  health.
                </li>
                <li className={css.text}>
-                 Discount up to <span>40%</span>! Taste the vitamins and keep your
+                 Discount up to <span>40%</span>! Taste <span>the vitamins</span> and keep your
                  health.
                </li>
                <li className={css.text}>
-                 Discount up to <span>40%</span>! Taste the vitamins and keep your
+                 Discount up to <span>40%</span>! Taste <span>the vitamins</span> and keep your
                  health.
                </li>
              </ul>
