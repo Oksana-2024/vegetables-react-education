@@ -20,8 +20,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .footerLogo {
   margin-bottom: 40px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+  }
 }

@@ -5,10 +5,10 @@ import clsx from "clsx";
 const Logo = ({ fill, footer }) => {
   return (
     <>
-      <div className={clsx(css.logoContainer, footer ? css.footerLogo: null)}>
+      <div className={clsx(css.logoContainer, footer && css.footerLogo)}>
         <a href="./" className={css.logo}>
           <BsGrid3X3GapFill
-            className={clsx(fill ? css.iconHeader : null)}
+            className={clsx(fill && css.iconHeader)}
             size="16"
           />
           veggieboost

@@ -8,24 +8,28 @@ const Navigation = ({
   navMenu,
   navHeader,
   navfooter,
-  nav,
-  marginFooter,
+  nav
 }) => {
   return (
-    <nav className={clsx(menu ? css.navMenu : null, nav ? css.navStyles : null, marginFooter ? css.marginFooter: null)}>
+    <nav
+      className={clsx(
+        menu && css.navMenu,
+        nav && css.navStyles
+      )}
+    >
       <ul
         className={clsx(
-          menu ? css.listMenu : null,
-          header ? css.listHeader : null,
-          footer ? css.listFooter : null
+          menu && css.listMenu,
+          header && css.listHeader,
+          footer && css.listFooter
         )}
       >
         <li>
           <a
             className={clsx(
-              navMenu ? css.linkMenu : null,
-              navHeader ? css.linkHeader : null,
-              navfooter ? css.linkFooter : null,
+              navMenu && css.linkMenu,
+              navHeader && css.linkHeader,
+              navfooter && css.linkFooter,
               css.link
             )}
             href="#work"
@@ -36,9 +40,9 @@ const Navigation = ({
         <li>
           <a
             className={clsx(
-              navMenu ? css.linkMenu : null,
-              navHeader ? css.linkHeader : null,
-              navfooter ? css.linkFooter : null,
+              navMenu && css.linkMenu,
+              navHeader && css.linkHeader,
+              navfooter && css.linkFooter,
               css.link
             )}
             href="#organic"
@@ -49,9 +53,9 @@ const Navigation = ({
         <li>
           <a
             className={clsx(
-              navMenu ? css.linkMenu : null,
-              navHeader ? css.linkHeader : null,
-              navfooter ? css.linkFooter : null,
+              navMenu && css.linkMenu,
+              navHeader && css.linkHeader,
+              navfooter && css.linkFooter,
               css.link
             )}
             href="#contacts"

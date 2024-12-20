@@ -24,9 +24,28 @@
   background-color: var(--secondary-background);
 }
 
-.footerContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .address {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .addressBox {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .img {
+    width: 349px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .navBox {
+    display: flex;
+    flex-direction: row;
+    gap: 212px
+  }
+
 }
