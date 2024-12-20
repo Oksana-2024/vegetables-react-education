@@ -29,7 +29,7 @@
   background-color: var(--secondary-background);
 }
 
-.plantItem:last-child{
+li:last-child {
   display: none;
 }
 
@@ -89,25 +89,31 @@
   .plantItem {
     width: 342px;
   }
+
+  .button {
+    width: 114px;
+    height: 114px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .title {
-  }
-
-  .text {
+    font-size: 40px;
+    line-height: 1.1;
   }
 
   .plantItem {
     width: 390px;
   }
 
-  .plantList{
+  .plantList {
     justify-content: center;
     margin-bottom: 44px;
   }
 
-  .plantItem:last-child{
+  li:last-child {
     display: block;
   }
 }

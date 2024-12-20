@@ -10,6 +10,7 @@ import SectionRecall from "./SectionRecall/SectionRecall";
 import Footer from "./Footer/Footer";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import Modal from "./Modal/Modal";
+import plants from "../plant.json";
 
 const App = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -22,7 +23,7 @@ const App = () => {
         <SectionVegetables />
         <SectionEasySteps />
         <SectionDiscount />
-        <SectionOrganic />
+        <SectionOrganic plants={plants} />
         <SectionDelivery />
         <SectionRecall />
       </main>
@@ -33,5 +34,3 @@ const App = () => {
   );
 };
 export default App;
-
-

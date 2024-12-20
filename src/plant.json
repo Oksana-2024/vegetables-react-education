@@ -57,10 +57,10 @@
   },
   {
     "name": "Redish",
-    "id": 8,
+    "id": 9,
     "img": "./images/radish.png",
     "alt": "Redish",
-    "price": 60
+    "price": 90
   }
 
 ]

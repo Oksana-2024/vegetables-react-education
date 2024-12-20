@@ -7,7 +7,7 @@ const CardVegetable = ({ name, img, alt, price }) => {
 
       <img className={css.imageCard} src={img} alt={alt} width={299} />
 
-      <p className={price}>{price} UAH / kg</p>
+      <p className={css.price}>{price} UAH / kg</p>
     </>
   );
 };

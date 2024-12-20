@@ -1,10 +1,9 @@
 import GlobalContainer from "../GlobalContainer/GlobalContainer";
-import plants from "../../plant.json";
 import css from "./SectionOrganic.module.css";
 import CardVegetable from "../CardVegetable/CardVegetable";
 import { GoArrowDown } from "react-icons/go";
 
-const SectionOrganic = () => {
+const SectionOrganic = ({plants}) => {
   return (
     <section className={css.organicPage}>
       <GlobalContainer>
