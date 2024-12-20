@@ -1,50 +1,107 @@
 .easyTitle {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-  }
-  
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.easyBox {
+  border-radius: 40px;
+  padding: 40px 20px 0;
+  background-image: url(../../assets/images/img_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.easyList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.numberSpan {
+  flex-shrink: 0;
+  width: 40px;
+  height: 38px;
+  border-radius: 200px;
+  padding: 10px 14px;
+  background-color: var(--main-background);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-align: center;
+  font-family: var(--main-font-family);
+}
+
+.easyImg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.easyText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  max-width: 176px;
+}
+
+@media screen and (min-width: 768px) {
   .easyBox {
-    border-radius: 40px;
-    padding: 40px 20px 0;
-    background-image: url(../../assets/images/img_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .easyList {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 20px;
+    flex-direction: row-reverse;
+    gap: 40px;
+    padding-top: 80px;
   }
-  
-  .listItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 14px;
+
+  .textColumn {
+    padding-bottom: 80px;
   }
-  
-  .numberSpan {
-    flex-shrink: 0;
-    width: 40px;
-    height: 38px;
-    border-radius: 200px;
-    padding: 10px 14px;
-    background-color: var(--main-background);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1;
-    letter-spacing: -0.04em;
-    text-align: center;
-  }
-  
+
   .easyImg {
-    margin-left: auto;
-    margin-right: auto;
+    width: 350px;
+    margin: 0;
   }
-  
+
+  .easyTitle {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  .easyList {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .easyImg {
+    width: 434px;
+  }
+
+  .textColumn {
+    max-width: 512px;
+    padding-top: 40px;
+  }
+
+  .easyBox {
+    gap: 0;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  .easyTitle {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
