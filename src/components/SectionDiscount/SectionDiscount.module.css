@@ -35,6 +35,7 @@
 span {
   font-family: var(--second-font-family);
   font-style: italic;
+  margin: 0 8px;
 }
 
 .firstLine {
