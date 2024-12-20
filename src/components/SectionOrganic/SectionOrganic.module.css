@@ -28,7 +28,7 @@
   background-color: var(--secondary-background);
 }
 
-li:last-child {
+.plantItem:last-child {
   display: none;
 }
 
@@ -113,7 +113,7 @@ li:last-child {
     margin-bottom: 44px;
   }
 
-  li:last-child {
+  .plantItem:last-child {
     display: block;
   }
 }
