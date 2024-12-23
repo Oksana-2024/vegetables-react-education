@@ -7,8 +7,17 @@ import girl1xTablet from "../../assets/images/GirlTablet.png";
 import girl2xTablet from "../../assets/images/GirlTablet@2x.png";
 import girl1xPhone from "../../assets/images/GirlPhone.png";
 import girl2xPhone from "../../assets/images/GirlPhone@2x.png";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import * as yup from "yup";
 
-const SectionRecall = () => {
+const SectionRecall = ({ handleSubmit }) => {
+  const schema = yup.object().shape({
+    number: yup
+      .string()
+      .min(10, "Min. length is 10 symbols")
+      .max(16, "Max. length is 16 symbols")
+      .required(),
+  });
   return (
     <section className={css.recallPage}>
       <GlobalContainer recall>
@@ -21,20 +30,32 @@ const SectionRecall = () => {
             for anyone looking to eat healthier or support local farmers. Order
             your box today and start enjoying the best that nature has to offer!
           </p>
-          <form className={css.form} action="">
-            <label htmlFor="user_tel">
-              <input
+          <Formik
+            onSubmit={handleSubmit}
+            initialValues={{ number: "" }}
+            validationSchema={schema}
+          >
+            <Form className={css.form}>
+              <label htmlFor="number"></label>
+              <Field
                 className={css.inputTel}
                 type="tel"
-                name="user_tel"
-                id="user_tel"
+                name="number"
+                id="number"
                 placeholder="+380 ()"
               />
-            </label>
-            <button className={css.recallBtn} type="submit">
-              Recall
-            </button>
-          </form>
+
+              <ErrorMessage
+                className={css.textError}
+                name="number"
+                component="span"
+              />
+
+              <button className={css.recallBtn} type="submit">
+                Recall
+              </button>
+            </Form>
+          </Formik>
         </div>
         <picture>
           <source

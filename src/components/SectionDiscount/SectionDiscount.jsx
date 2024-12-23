@@ -21,3 +21,5 @@ const SectionDiscount = () => {
   );
 };
 export default SectionDiscount;
+
+

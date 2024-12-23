@@ -49,6 +49,13 @@
   color: var(--white);
   position: absolute;
   right: 0;
+  top: 0;
+}
+
+.textError {
+  font-family: var(--main-font-family);
+  color: var(--red);
+  margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
@@ -86,6 +93,11 @@
   .image {
     width: 704px;
   }
+
+  /* .textError{
+    position: absolute;
+    top: 51px;
+  } */
 }
 
 @media screen and (min-width: 1280px) {
@@ -105,12 +117,12 @@
     margin-bottom: 40px;
   }
 
-  .text{
+  .text {
     margin-bottom: 80px;
     text-align: start;
   }
 
-  .form{
+  .form {
     align-items: start;
   }
 

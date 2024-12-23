@@ -5,6 +5,7 @@
   --orange: #fc8a11;
   --beige: #faf3e7;
   --gray: #f3f3f3;
+  --red: #e0070b;
   --discont-color: #f9f7f4;
   --main-font: "DM Sans", sans-serif;
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,7 +69,6 @@
   font-display: swap;
   font-weight: 400;
 }
-
 
 h1,
 h2,

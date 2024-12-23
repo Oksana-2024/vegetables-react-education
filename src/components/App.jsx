@@ -15,6 +15,14 @@ import plants from "../plant.json";
 const App = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const mobileMenuToggle = () => setMobileMenu(!mobileMenu);
+
+  const [contact, setContact ] = useState("");
+  const onRecallSubmit = (values, actions) => {
+        setContact([...contact, values]);
+    actions.resetForm();
+  };
+  
+
   return (
     <>
       <Header onMenu={mobileMenuToggle} />
@@ -25,7 +33,7 @@ const App = () => {
         <SectionDiscount />
         <SectionOrganic plants={plants} />
         <SectionDelivery />
-        <SectionRecall />
+        <SectionRecall handleSubmit={onRecallSubmit}/>
       </main>
       <Footer />
       <MobileMenu open={mobileMenu} onMenu={mobileMenuToggle} />
