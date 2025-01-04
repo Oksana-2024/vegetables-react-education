@@ -1,0 +1,30 @@
+.iconCkecked {
+  border: 1.5px solid var(--main-background);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.iconC {
+  fill: var(--main-background);
+}
+
+.icon {
+  fill: transparent;
+}
+
+.visuallyHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  margin: -1px;
+}
