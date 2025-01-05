@@ -53,9 +53,10 @@
 }
 
 .textError {
-  font-family: var(--main-font-family);
+  font-family: var(--main-font);
   color: var(--red);
   margin-top: 8px;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 768px) {
@@ -94,11 +95,7 @@
     width: 704px;
   }
 
-  /* .textError{
-    position: absolute;
-    top: 51px;
-  } */
-}
+  }
 
 @media screen and (min-width: 1280px) {
   .image {

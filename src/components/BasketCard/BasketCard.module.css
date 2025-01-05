@@ -10,6 +10,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 2px;
   margin-bottom: 2px;
 }
 
@@ -21,8 +22,41 @@
 }
 
 .descrBox {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .img {
+    width: 172px;
+    height: 142px;
+  }
+
+  .descrBox{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .titleChek{
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 6px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .img {
+    width: 242px;
+    height: 200px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .titleChek{
+    
+  }
 }

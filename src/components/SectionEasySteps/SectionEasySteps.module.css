@@ -41,7 +41,7 @@
   line-height: 1;
   letter-spacing: -0.04em;
   text-align: center;
-  font-family: var(--main-font-family);
+  font-family: var(--main-font);
 }
 
 .easyImg {

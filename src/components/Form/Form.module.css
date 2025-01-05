@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.field,
+.fieldText {
+  border: 1px solid rgba(20, 20, 20, 0.3);
+  border-radius: 100px;
+  width: 295px;
+  height: 46px;
+  padding: 14px 24px;
+}
+
+.fieldText {
+  height: 132px;
+  border-radius: 20px;
+}
+
+.field::placeholder,
+.fieldText::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  color: rgba(20, 20, 20, 0.5);
+}

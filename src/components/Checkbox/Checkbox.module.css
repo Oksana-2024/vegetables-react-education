@@ -28,3 +28,13 @@
   clip-path: inset(100%);
   margin: -1px;
 }
+
+@media screen and (min-width: 768px) {
+  .iconCkecked {
+    margin-left: auto;
+  }
+
+  .label {
+    width: 100%;
+  }
+}

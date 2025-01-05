@@ -6,14 +6,18 @@ import css from "./Header.module.css";
 import GlobalContainer from "../GlobalContainer/GlobalContainer";
 //import clsx from "clsx";
 
-const Header = ({ onMenu }) => {
+const Header = ({ onMenu, openModal }) => {
   return (
     <header className={css.headerPage}>
       <GlobalContainer>
         <div className={css.containerHeader}>
           <Navigation header navHeader nav />
           <Logo fill />
-          <HiOutlineShoppingCart className={css.iconShop} size="20" />
+          <HiOutlineShoppingCart
+            className={css.iconShop}
+            size="20"
+            onClick={openModal}
+          />
           <button className={css.buttonMenu} type="button" onClick={onMenu}>
             <CgMenuLeft className={css.iconMenu} />
           </button>

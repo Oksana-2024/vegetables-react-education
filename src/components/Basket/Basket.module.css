@@ -1,0 +1,27 @@
+.basketList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.basketItem {
+  background-color: var(--beige);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.04em;
+}
+
+.titleChek{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+

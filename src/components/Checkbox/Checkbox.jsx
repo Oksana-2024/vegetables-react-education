@@ -11,7 +11,7 @@ const Checkbox = () => {
   };
   return (
     <>
-      <label htmlFor={inputId}>
+      <label htmlFor={inputId} className={s.label}>
         <span className={s.iconCkecked}>
           <FaCheck size={8} className={clsx(isChecked ? s.iconC : s.icon)} />
         </span>

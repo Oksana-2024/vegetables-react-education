@@ -3,7 +3,7 @@ import css from "./SectionOrganic.module.css";
 import CardVegetable from "../CardVegetable/CardVegetable";
 import { GoArrowDown } from "react-icons/go";
 
-const SectionOrganic = ({plants}) => {
+const SectionOrganic = ({plants, openModal}) => {
   return (
     <section className={css.organicPage}>
       <GlobalContainer>
@@ -20,7 +20,7 @@ const SectionOrganic = ({plants}) => {
           </li>
         ))}
       </ul>
-      <button className={css.button} type="button">
+      <button className={css.button} type="button" onClick={openModal}>
         <GoArrowDown size={14} className={css.iconOrder} />
         ORDER
       </button>

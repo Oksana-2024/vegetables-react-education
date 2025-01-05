@@ -7,10 +7,9 @@
   --gray: #f3f3f3;
   --red: #e0070b;
   --discont-color: #f9f7f4;
-  --main-font: "DM Sans", sans-serif;
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
   --white: #fff;
-  --main-font-family: "DM Sans", sans-serif;
+  --main-font: "DM Sans", sans-serif;
   --second-font-family: "Neue Montreal", sans-serif;
 }
 
@@ -79,7 +78,7 @@ h6,
 p {
   margin: 0;
   color: var(--main-text-color);
-  font-family: var(--main-font-family);
+  font-family: var(--main-font);
 }
 
 ul,
@@ -92,13 +91,13 @@ ol {
 a {
   text-decoration: none;
   color: var(--main-text-color);
-  font-family: var(--main-font-family);
+  font-family: var(--main-font);
 }
 
 button {
   cursor: pointer;
   border: none;
-  font-family: var(--main-font-family);
+  font-family: var(--main-font);
 }
 
 img {
@@ -110,9 +109,10 @@ img {
 input,
 textarea {
   outline: none;
-  font-family: var(--main-font-family);
+  font-family: var(--main-font);
 }
 
 html {
   scroll-behavior: smooth;
 }
+

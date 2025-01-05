@@ -9,35 +9,57 @@ import SectionDelivery from "./SectionDelivery/SectionDelivery";
 import SectionRecall from "./SectionRecall/SectionRecall";
 import Footer from "./Footer/Footer";
 import MobileMenu from "./MobileMenu/MobileMenu";
-import Modal from "./Modal/Modal";
 import plants from "../plant.json";
+import ModalForm from "./ModalForm/ModalForm";
+import Form from "./Form/Form";
+import Basket from "./Basket/Basket";
 
 const App = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
   const mobileMenuToggle = () => setMobileMenu(!mobileMenu);
 
-  const [contact, setContact ] = useState("");
+  const [contact, setContact] = useState("");
   const onRecallSubmit = (values, actions) => {
-        setContact([...contact, values]);
+    setContact([...contact, values]);
     actions.resetForm();
   };
-  
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+ 
 
   return (
     <>
-      <Header onMenu={mobileMenuToggle} />
+      <Header onMenu={mobileMenuToggle} openModal={openModal} />
       <main>
-        <SectionHero />
+        <SectionHero openModal={openModal} />
         <SectionVegetables />
         <SectionEasySteps />
         <SectionDiscount />
-        <SectionOrganic plants={plants} />
+        <SectionOrganic plants={plants} openModal={openModal} />
         <SectionDelivery />
-        <SectionRecall handleSubmit={onRecallSubmit}/>
+        <SectionRecall handleSubmit={onRecallSubmit} />
       </main>
       <Footer />
-      <MobileMenu open={mobileMenu} onMenu={mobileMenuToggle} />
-      <Modal />
+      <MobileMenu
+        open={mobileMenu}
+        onMenu={mobileMenuToggle}
+        openModal={openModal}
+      />
+      <ModalForm
+        closeModal={closeModal}
+        modalIsOpen={modalIsOpen}
+      >
+        <Basket />
+        <Form />
+      </ModalForm>
     </>
   );
 };

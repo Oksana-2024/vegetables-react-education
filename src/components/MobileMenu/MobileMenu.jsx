@@ -5,7 +5,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import css from "./MobileMenu.module.css";
 import clsx from "clsx";
 
-const MobileMenu = ({ open, onMenu }) => {
+const MobileMenu = ({ open, onMenu, openModal }) => {
   return (
     <div className={clsx(css.mobileMenu, open ? css.isOpen : null)}>
       <div className={css.menuContainer}>
@@ -16,7 +16,7 @@ const MobileMenu = ({ open, onMenu }) => {
       </div>
       <Navigation navMenu={true} menu={true} />
       <div className={css.iconShopBox}>
-        <HiOutlineShoppingCart className={css.iconShop} size="20px" />
+        <HiOutlineShoppingCart className={css.iconShop} onClick={openModal} size="20px" />
       </div>
     </div>
   );
