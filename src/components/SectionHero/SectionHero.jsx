@@ -28,7 +28,7 @@ const HeroSection = ({openModal}) => {
             baskets delivered to you.
           </p>
           <button className={css.buttonRound} type="button" onClick={openModal}>
-            <div className={css.buttonText}>shop now</div>
+           shop now
           </button>
       </div>
        <div>

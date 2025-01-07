@@ -32,9 +32,6 @@
   border-radius: 100%;
   border-color: var(--beige);
   margin-bottom: 8px;
-}
-
-.buttonText {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -169,9 +166,6 @@
     width: 114px;
     height: 114px;
     margin-bottom: 4px;
-  }
-
-  .buttonText {
     font-size: 24px;
   }
 
@@ -187,6 +181,11 @@
   .buttonBox {
     padding-left: 488px;
     gap: 8px 4px;
+  }
+
+  .buttonRound:hover {
+    color: var(--main-background);
+    background-color: var(--secondary-background);
   }
 
   .buttonFirst,
@@ -278,16 +277,13 @@
     padding-left: 296px;
   }
 
-  .firstBox{
+  .firstBox {
     max-width: 672px;
   }
 
   .imgBox {
     width: 517px;
-    height:324px;
+    height: 324px;
     position: relative;
   }
-
-  
-  
 }

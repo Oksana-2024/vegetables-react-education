@@ -125,5 +125,8 @@
 
   .recallBtn {
     right: 258px;
+    &:hover{
+      background-color: var(--main-background);
+    }
   }
 }

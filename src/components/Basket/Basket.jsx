@@ -38,7 +38,7 @@ const Basket = () => {
           image1t={cabageT}
           image2t={cabage2T}
         >
-          <Checkbox className={s.checkbox}/>
+          <Checkbox />
         </BasketCard>
       </li>
       <li className={s.basketItem}>

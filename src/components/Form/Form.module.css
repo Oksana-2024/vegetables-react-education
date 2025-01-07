@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-top: 40px;
 }
 
 .field,
@@ -17,13 +16,72 @@
 .fieldText {
   height: 132px;
   border-radius: 20px;
+  resize: none;
 }
 
 .field::placeholder,
 .fieldText::placeholder {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.04em;
   color: rgba(20, 20, 20, 0.5);
+}
+
+.submitBtn {
+  background-color: var(--orange);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: var(--white);
+  border-radius: 100px;
+  padding: 12px 24px;
+  width: 92px;
+  height: 42px;
+  &:hover{
+    background-color: var(--main-background);
+  }
+}
+
+.modalImage {
+  display: none;
+}
+
+.errMessage {
+  color: var(--red);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .field,
+  .fieldText {
+    width: 360px;
+  }
+
+  .submitBtn {
+    width: 114px;
+  }
+
+  .modalImage {
+    display: block;
+    position: absolute;
+    bottom: -49px;
+    right: -178px;
+    overflow: hidden;
+  }
+  .formContainer {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .formContainer {
+  }
+  .modalImage {
+    right: -19px;
+  }
 }

@@ -10,6 +10,8 @@
   background-image: url(../../assets/images/img_background.png);
   padding: 80px 20px;
   border-radius: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -29,6 +31,12 @@
   .title {
     font-size: 28px;
     line-height: 1.14;
+  }
+
+  .deliveryImg{
+    width: 544px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

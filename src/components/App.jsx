@@ -32,8 +32,7 @@ const App = () => {
   function closeModal() {
     setIsOpen(false);
   }
-
- 
+  
 
   return (
     <>
@@ -53,10 +52,7 @@ const App = () => {
         onMenu={mobileMenuToggle}
         openModal={openModal}
       />
-      <ModalForm
-        closeModal={closeModal}
-        modalIsOpen={modalIsOpen}
-      >
+      <ModalForm closeModal={closeModal} modalIsOpen={modalIsOpen}>
         <Basket />
         <Form />
       </ModalForm>
