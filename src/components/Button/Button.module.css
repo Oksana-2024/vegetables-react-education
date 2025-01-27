@@ -1,0 +1,31 @@
+.button {
+  border: 1px solid var(--white);
+  background-color: transparent;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 1000px;
+  color: var(--white);
+  &:hover {
+    background-color: var(--gray);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .button {
+    max-width: 672px;
+  }
+}

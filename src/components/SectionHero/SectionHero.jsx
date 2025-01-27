@@ -5,6 +5,7 @@ import user1 from "../../assets/images/user1.png";
 import user2 from "../../assets/images/user2.png";
 import user3 from "../../assets/images/user3.png";
 import clsx from "clsx";
+import Button from "../Button/Button";
 
 const HeroSection = ({openModal}) => {
   return (
@@ -42,18 +43,12 @@ const HeroSection = ({openModal}) => {
             />
           </div>
           <div className={css.buttonBox}>
-            <button className={css.buttonFirst} type="button">
-              <a href="#organic"> #organic</a>
-            </button>
-            <button className={css.buttonSecond} type="button">
-              <a href="#"> #products</a>
-            </button>
-            <button className={css.buttonThird} type="button" onClick={openModal}>
-              <a href="#">#basket</a>
-            </button>
-            <button className={css.buttonFourth} type="button">
-              <a href="#">#vegetables</a>
-            </button>
+           <Button nameButton="organic" link="organic"/>
+           <Button nameButton="products" link="products"/>
+           <Button nameButton="BASKET" link="basket" onClick={openModal}/>
+           <Button nameButton="VEGETABLES" link=""/>
+           
+           
           </div>
        </div>
       </GlobalContainer>

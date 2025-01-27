@@ -44,36 +44,8 @@
   font-family: var(--main-font);
 }
 
-.buttonFirst {
-  padding: 8px 14px;
-  background-color: var(--gray);
-}
-
-.buttonSecond,
-.buttonThird,
-.buttonFourth {
-  border: 1px solid var(--white);
-  background-color: transparent;
-}
-
-.buttonFirst,
-.buttonSecond,
-.buttonThird,
-.buttonFourth {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 1.2;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 8px 12px;
-  border-radius: 1000px;
-}
-
 .titleHero,
-.textHero,
-.button {
+.textHero {
   color: var(--white);
 }
 
@@ -188,19 +160,6 @@
     background-color: var(--secondary-background);
   }
 
-  .buttonFirst,
-  .buttonSecond,
-  .buttonThird,
-  .buttonFourth {
-    padding: 10px 20px;
-    font-size: 12px;
-    line-height: 1.17;
-  }
-
-  .buttonFirst {
-    padding: 10px 20px;
-  }
-
   .userImg,
   .reviews {
     width: 56px;
@@ -275,10 +234,6 @@
 
   .buttonBox {
     padding-left: 296px;
-  }
-
-  .firstBox {
-    max-width: 672px;
   }
 
   .imgBox {
