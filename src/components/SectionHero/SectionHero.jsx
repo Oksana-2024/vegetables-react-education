@@ -43,9 +43,9 @@ const HeroSection = ({openModal}) => {
             />
           </div>
           <div className={css.buttonBox}>
-           <Button nameButton="organic" link="organic"/>
-           <Button nameButton="products" link="products"/>
-           <Button nameButton="BASKET" link="basket" onClick={openModal}/>
+           <Button nameButton="ORGANIC" link="#organic"/>
+           <Button nameButton="PRODUCTS" link="/#products"/>
+           <Button nameButton="BASKET" openModal={openModal}/>
            <Button nameButton="VEGETABLES" link=""/>
            
            

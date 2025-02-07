@@ -1,11 +1,12 @@
-import css from "./Button.module.css"
-const Button = ({nameButton,link}) => {
-    return (
-        <div>
-             <button className={css.button} type="button">
-              <a href={`#${link}`}> #{nameButton}</a>
-            </button>
-        </div>
-    )
-}
-export default Button
+
+
+import css from "./Button.module.css";
+import { NavHashLink } from "react-router-hash-link";
+const Button = ({ nameButton, link, openModal }) => {
+  return (
+    <>
+    <NavHashLink to={link}  onClick={openModal} className={css.button}>{nameButton}</NavHashLink>
+    </>
+  );
+};
+export default Button;

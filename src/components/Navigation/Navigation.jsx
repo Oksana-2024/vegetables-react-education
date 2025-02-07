@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import css from "./Navigation.module.css";
+import { NavHashLink } from "react-router-hash-link";
 
 const Navigation = ({
   header,
@@ -8,7 +9,8 @@ const Navigation = ({
   navMenu,
   navHeader,
   navfooter,
-  nav
+  nav,
+  closeMenu
 }) => {
   return (
     <nav
@@ -25,43 +27,46 @@ const Navigation = ({
         )}
       >
         <li>
-          <a
+          <NavHashLink
             className={clsx(
               navMenu && css.linkMenu,
               navHeader && css.linkHeader,
               navfooter && css.linkFooter,
               css.link
             )}
-            href="#work"
+            to="#work"
+            onClick={closeMenu}
           >
             How It Works
-          </a>
+          </NavHashLink>
         </li>
         <li>
-          <a
+          <NavHashLink
             className={clsx(
               navMenu && css.linkMenu,
               navHeader && css.linkHeader,
               navfooter && css.linkFooter,
               css.link
             )}
-            href="#organic"
+           to="#organic"
+           onClick={closeMenu}
           >
             Vegetables
-          </a>
+          </NavHashLink>
         </li>
         <li>
-          <a
+          <NavHashLink
             className={clsx(
               navMenu && css.linkMenu,
               navHeader && css.linkHeader,
               navfooter && css.linkFooter,
               css.link
             )}
-            href="#contacts"
+           to="#contacts"
+           onClick={closeMenu}
           >
             Contacts
-          </a>
+          </NavHashLink>
         </li>
       </ul>
     </nav>

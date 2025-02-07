@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Header from "./Header/Header";
 import SectionHero from "./SectionHero/SectionHero";
 import SectionVegetables from "./SectionVegetables/SectionVegetables";
@@ -9,10 +10,10 @@ import SectionDelivery from "./SectionDelivery/SectionDelivery";
 import SectionRecall from "./SectionRecall/SectionRecall";
 import Footer from "./Footer/Footer";
 import MobileMenu from "./MobileMenu/MobileMenu";
-import plants from "../plant.json";
+import Basket from "./Basket/Basket";
 import ModalForm from "./ModalForm/ModalForm";
 import Form from "./Form/Form";
-import Basket from "./Basket/Basket";
+import plants from "../plant.json";
 
 const App = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -51,6 +52,7 @@ const App = () => {
         open={mobileMenu}
         onMenu={mobileMenuToggle}
         openModal={openModal}
+        closeMenu={mobileMenuToggle}
       />
       <ModalForm closeModal={closeModal} modalIsOpen={modalIsOpen}>
         <Basket />

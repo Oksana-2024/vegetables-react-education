@@ -45,11 +45,9 @@ const SectionRecall = ({ handleSubmit }) => {
                 placeholder="+380 ()"
               />
 
-              <ErrorMessage
-                className={css.textError}
-                name="number"
-                component="span"
-              />
+              <div className={css.textError}>
+                <ErrorMessage name="number" component="span" />
+              </div>
 
               <button className={css.recallBtn} type="submit">
                 Recall

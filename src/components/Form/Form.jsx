@@ -35,7 +35,6 @@ const Form = () => {
   });
   return (
     <div className={s.formContainer}>
-      
       <Formik
         initialValues={initialValues}
         onSubmit={handleSubmit}
@@ -49,7 +48,9 @@ const Form = () => {
             className={s.field}
             id={nameFieldId}
           />
-          <ErrorMessage className={s.errMessage} name="name" component="div" />
+          <div className={s.errMessage}>
+            <ErrorMessage name="name" component="div" />
+          </div>
           <Field
             type="email"
             name="email"
@@ -57,7 +58,9 @@ const Form = () => {
             className={s.field}
             id={emailFieldId}
           />
-          <ErrorMessage className={s.errMessage} name="email" component="div" />
+          <div className={s.errMessage}>
+            <ErrorMessage name="email" component="div" />
+          </div>
           <Field
             type="text"
             name="card"
@@ -65,7 +68,9 @@ const Form = () => {
             className={s.field}
             id={cardFieldId}
           />
-          <ErrorMessage className={s.errMessage} name="card" component="div" />
+          <div className={s.errMessage}>
+            <ErrorMessage name="card" component="div" />
+          </div>
           <Field
             as="textarea"
             type="text"
@@ -74,11 +79,9 @@ const Form = () => {
             className={s.fieldText}
             id={msgFieldId}
           />
-          <ErrorMessage
-            className={s.errMessage}
-            name="comment"
-            component="div"
-          />
+          <div className={s.errMessage}>
+            <ErrorMessage name="comment" component="div" />
+          </div>
           <button className={s.submitBtn} type="submit">
             Submit
           </button>

@@ -13,8 +13,10 @@
   color: var(--white);
   &:hover {
     background-color: var(--gray);
+    color: var(--main-text-color);
   }
 }
+
 
 @media screen and (min-width: 768px) {
   .button {
