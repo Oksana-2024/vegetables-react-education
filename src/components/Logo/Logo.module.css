@@ -1,8 +1,5 @@
-.iconHeader {
-  fill: var(--main-background);
-}
 
-.logo {
+.logoContainer {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -12,13 +9,6 @@
   display: flex;
   flex-direction: row;
   gap: 8px;
-  align-items: center;
-  justify-content: center;
-}
-
-.logoContainer {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }

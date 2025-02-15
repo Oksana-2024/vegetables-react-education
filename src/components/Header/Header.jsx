@@ -4,7 +4,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 import { CgMenuLeft } from "react-icons/cg";
 import css from "./Header.module.css";
 import GlobalContainer from "../GlobalContainer/GlobalContainer";
-//import clsx from "clsx";
+
 
 const Header = ({ onMenu, openModal }) => {
   return (
@@ -12,7 +12,7 @@ const Header = ({ onMenu, openModal }) => {
       <GlobalContainer>
         <div className={css.containerHeader}>
           <Navigation header navHeader nav />
-          <Logo fill />
+          <Logo className={css.iconHeader} />
           <HiOutlineShoppingCart
             className={css.iconShop}
             size="20"

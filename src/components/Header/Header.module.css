@@ -32,6 +32,10 @@
   align-items: center;
 }
 
+.iconHeader {
+  fill: var(--main-background);
+}
+
 @media screen and (min-width: 768px) {
   .iconShop {
     display: block;

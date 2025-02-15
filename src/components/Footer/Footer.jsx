@@ -19,7 +19,7 @@ const Footer = () => {
               width={335}
               height={172}
             />
-            <Logo footer/>
+            <Logo className={css.footerLogo} footer/>
           </div>
           <Navigation navFooter footer/>
        </div>
