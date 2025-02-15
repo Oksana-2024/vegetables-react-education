@@ -4,12 +4,12 @@ import Social from "../Social/Social";
 import css from "./Footer.module.css";
 import img from "../../assets/images/vegetables_footer.png";
 import GlobalContainer from "../GlobalContainer/GlobalContainer";
-//import css from "./Footer.module.css";
+
 
 const Footer = () => {
   return (
     <footer className={css.footerPage}>
-      <GlobalContainer footer>
+      <GlobalContainer className={css.footerContainer}>
        <div className={css.navBox}>
           <div>
             <img

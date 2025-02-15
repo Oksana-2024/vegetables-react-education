@@ -1,14 +1,12 @@
 import clsx from "clsx";
 import css from "./GlobalContainer.module.css";
 
-const GlobalContainer = ({ children, hero, footer, recall }) => {
+const GlobalContainer = ({ children, className}) => {
   return (
     <div
       className={clsx(
         css.container,
-        hero && css.heroContainer,
-        footer && css.footerContainer,
-        recall && css.recallContainer
+        className
       )}
     >
       {children}
