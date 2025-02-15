@@ -130,4 +130,10 @@
       background-color: var(--main-background);
     }
   }
+
+  .recallContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

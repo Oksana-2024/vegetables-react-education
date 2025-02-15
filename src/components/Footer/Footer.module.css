@@ -24,6 +24,13 @@
   background-color: var(--secondary-background);
 }
 
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .address {
     font-size: 18px;
@@ -38,6 +45,12 @@
 
   .img {
     width: 349px;
+  }
+
+  .footerContainer {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
   }
 }
 

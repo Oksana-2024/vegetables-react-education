@@ -10,7 +10,7 @@ import Button from "../Button/Button";
 const HeroSection = ({openModal}) => {
   return (
     <section className={css.heroPage}>
-      <GlobalContainer hero={true}>
+      <GlobalContainer className={css.heroContainer}>
       <div className={css.firstBox}>
          <div className={css.box}>
             <img className={clsx(css.userImg, css.img1) } src={user1} alt="Photo" width={44} />

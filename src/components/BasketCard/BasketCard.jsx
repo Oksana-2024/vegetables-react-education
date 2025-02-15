@@ -1,3 +1,4 @@
+import Media from "react-media";
 import s from "./BasketCard.module.css";
 
 const BasketCard = ({
@@ -8,7 +9,6 @@ const BasketCard = ({
   image2t,
   image1m,
   image2m,
-  image,
   subtitle = "Plant",
   title,
   descript,
@@ -21,27 +21,48 @@ const BasketCard = ({
       </div>
       <div className={s.descrBox}>
         <p className={s.text}>{subtitle}</p>
-        <picture>
-          <source
-            media="(min-width:1280px)"
-            srcSet={`${image1d} 1x, ${image2d} 2x`}
-          />
-          <source
-            media="(min-width: 768px)"
-            srcSet={`${image1t} 1x, ${image2t} 2x`}
-          />
-          <source
-            media="(max-width:767px)"
-            srcSet={`${image1m} 1x, ${image2m} 2x`}
-          />
-          <img
-            className={s.img}
-            src={image}
-            alt={descript}
-            width={94}
-            height={78}
-          />
-        </picture>
+        <Media
+          queries={{
+            mobile: "(max-width: 767px)",
+            tablet: "(min-width: 768px) and (max-width: 1279px)",
+            desktop: "(min-width: 1280px)",
+          }}
+        >
+          {(matches) => (
+            <>
+              {matches.desktop && (
+                <img
+                  className={s.img}
+                  src={image1d}
+                  alt={descript}
+                  srcSet={image2d}
+                  width={94}
+                  height={78}
+                />
+              )}
+              {matches.tablet && (
+                <img
+                  className={s.img}
+                  src={image1t}
+                  alt={descript}
+                  srcSet={image2t}
+                  width={94}
+                  height={78}
+                />
+              )}
+              {matches.mobile && (
+                <img
+                  className={s.img}
+                  src={image1m}
+                  alt={descript}
+                  srcSet={image2m}
+                  width={94}
+                  height={78}
+                />
+              )}
+            </>
+          )}
+        </Media>
       </div>
     </>
   );

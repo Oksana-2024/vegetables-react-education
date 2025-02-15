@@ -193,6 +193,12 @@
     padding-top: 220px;
   }
 
+  .heroContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+  }
+
   .userImg,
   .reviews {
     width: 82px;

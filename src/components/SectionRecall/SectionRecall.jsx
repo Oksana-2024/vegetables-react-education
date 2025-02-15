@@ -20,7 +20,7 @@ const SectionRecall = ({ handleSubmit }) => {
   });
   return (
     <section className={css.recallPage}>
-      <GlobalContainer recall>
+      <GlobalContainer className={css.recallContainer}>
         <div className={css.box}>
           <h2 id="contacts" className={css.title}>
             Fresh Harvest Box has got you covered
